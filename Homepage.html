@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #941372;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: rgb(145, 13, 110);
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>BEAUTY NEST</h1>
+  <p>Unnest Your Beauty Potential</p>
+</div>
+
+<div class="topnav">
+  <a href="Homepage.html">Homepage</a>
+  <a href="AboutUs.html">AboutUs</a>
+  <a href="OurProducts.html">OurProducts</a>
+  <a href="OurServices.html">OurServices</a>
+  <a href="ContactUs.html">ContactUs</a>
+</div>
+
+<div class="row">
+  <div class="column">
+    <h2>OurProducts</h2>
+    <p>At Beauty Nest, we proudly offer a curated range of premium beauty products to help you look and feel your best every day.
+
+        Our product selection includes:
+        
+        💅 Nail Care Products
+        
+        Gel polishes in vibrant and classic shades
+        
+        Nail strengthening treatments
+        
+        Cuticle oils and hand creams
+        
+        Press-on nails and nail accessories
+        
+        💇‍♀️ Hair Care Products
+        
+        Professional shampoos and conditioners for all hair types
+        
+        Hair oils, serums, and masks for healthy, shiny hair
+        
+        Styling tools (flat irons, curlers, dryers)
+        
+        Hair extensions and wigs
+        
+        💄 Makeup Products
+        
+        Long-lasting foundations and concealers
+        
+        Bold and neutral eyeshadow palettes
+        
+        Lipsticks, glosses, and liners in every shade
+        
+        Makeup brushes and beauty blenders
+        
+        🌟 Beauty Essentials
+        
+        Skincare products (cleansers, toners, moisturizers)
+        
+        Eyelash extensions and application kits
+        
+        Brow grooming kits
+        
+        At Beauty Nest, we only stock products from trusted, high-quality brands to ensure your beauty routine is safe, effective, and luxurious. Whether you’re shopping for a full makeover or just your daily essentials, you’ll find everything you need at Beauty Nest!
+        
+        Visit us today and explore the nest where beauty begins. 🌸</p>
+  </div>
+  
+  <div class="column">
+    <h2>AboutUs</h2>
+    <p>Welcome to Beauty Nest — Your Home of Beauty and Confidence!
+
+        At Beauty Nest, we believe that beauty is more than just appearance — it’s about feeling confident, empowered, and your absolute best. Founded with a passion for creativity and self-expression, Beauty Nest is your one-stop destination for expert nail care, hair styling, and makeup artistry.
+        
+        Our talented team of beauty professionals is dedicated to delivering personalized services that bring out your natural beauty. Whether you're getting ready for a special event, treating yourself to a glam session, or just in need of some self-care, we are here to make sure you leave our shop looking and feeling amazing.
+        
+        We specialize in:
+        ✨ Trendy and classic nail designs
+        ✨ Healthy and stylish hair treatments and styling
+        ✨ Flawless makeup looks for every occasion
+        
+        At Beauty Nest, every client is treated like family. Our warm, welcoming environment is designed to make you relax, unwind, and enjoy the experience. We use only top-quality products and stay updated with the latest trends and techniques to ensure you receive the best service possible.
+        
+        Come find your beauty haven at Beauty Nest — where beauty meets passion, and every visit leaves you glowing inside and out.</p>
+  </div>
+  
+  <div class="column">
+    <h2>OurServices</h2>
+    <p>At Beauty Nest, we specialize in delivering a full beauty experience that enhances your natural beauty and boosts your confidence. Our professional team offers top-quality services in nails, hair, and makeup — all under one roof.
+
+        ✨ Nail Services
+        
+        Classic and Spa Manicures
+        
+        Gel and Acrylic Nails
+        
+        Nail Art, Designs, and Custom Sets
+        
+        Pedicures and Foot Treatments
+        
+        💇‍♀️ Hair Services
+        
+        Haircuts and Trims
+        
+        Hair Styling (Curls, Straightening, Blowouts)
+        
+        Hair Coloring, Highlights, and Balayage
+        
+        Braiding, Weaving, and Hair Extensions
+        
+        Hair Treatments for Repair and Strengthening
+        
+        💄 Makeup Services
+        
+        Full Glam Makeup for Parties, Weddings, and Special Events
+        
+        Soft Glam and Natural Everyday Makeup
+        
+        Bridal Makeup Packages (including trials)
+        
+        Editorial and Photoshoot Makeup
+        
+        Makeup Lessons and Tutorials (learn from the pros!)
+        
+        Eyebrow Shaping, Tinting, and Brow Makeup
+        
+        Eyelash Extensions and Lash Lifts
+        
+        🌸 Beauty Extras
+        
+        Skincare Consultations and Mini Facials
+        
+        Beauty Product Recommendations and Custom Kits
+        
+        At Beauty Nest, we are passionate about helping you express your inner beauty. Whether you need a quick touch-up, a full transformation, or a relaxing pampering session, you’re always welcome at Beauty Nest — where beauty blooms!
+        
+        Come and experience beauty done right. Book your appointment today!
+        
+        </p>
+  </div>
+</div>
+<div class="footer">
+    <p>&copy; 2025 Beauty Nest. All rights reserved.</p>
+  </div>
+
+</body>
+</html>
+
+

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Our Products - Beauty Nest</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+.header img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #941372;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: rgb(145, 13, 110);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.product {
+  flex: 1 1 300px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  background: #fff;
+}
+
+.product img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.product h3 {
+  color: #941372;
+  margin: 10px 0;
+}
+
+.product p {
+  padding: 0 15px 15px;
+}
+
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="logo.png" alt="Beauty Nest Logo">
+  <h1>BEAUTY NEST</h1>
+  <p>Unnest Your Beauty Potential</p>
+</div>
+
+<div class="topnav">
+  <a href="Homepage.html">Homepage</a>
+  <a href="AboutUs.html">About Us</a>
+  <a href="OurProducts.html">Our Products</a>
+  <a href="OurServices.html">Our Services</a>
+  <a href="ContactUs.html">Contact Us</a>
+</div>
+
+<h2 style="text-align:center; padding-top: 20px;">Our Products</h2>
+
+<div class="row">
+  <div class="product">
+    <img src="image.jpg" alt="Makeup Products">
+    <h3>Makeup Collection</h3>
+    <p>Explore our vibrant range of foundations, lipsticks, eyeliners, and palettes designed for every skin tone and style.</p>
+  </div>
+  
+  <div class="product">
+    <img src="nail.jpg" alt="Nail Products">
+    <h3>Nail Care</h3>
+    <p>Beautiful nails start here! Shop polishes, gel kits, acrylics, and nail treatments to keep your hands gorgeous and healthy.</p>
+  </div>
+
+  <div class="product">
+    <img src="hairr.jpg" alt="Hair Products">
+    <h3>Hair Care</h3>
+    <p>From shampoos to styling tools, our hair care line offers everything you need for strong, shiny, and fabulous hair.</p>
+  </div>
+
+  <div class="product">
+    <img src="skin.jpg" alt="Skin Care Products">
+    <h3>Skin Care</h3>
+    <p>Nourish your skin with our moisturizers, cleansers, serums, and masks for a naturally radiant, healthy glow.</p>
+  </div>
+</div>
+
+<div class="footer">
+  <p>&copy; 2025 Beauty Nest. All rights reserved.</p>
+</div>
+
+</body>
+</html>
