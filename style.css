@@ -1,0 +1,510 @@
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  /* Style the header */
+  .header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: #941372;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: rgb(145, 13, 110);
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+  }
+  
+  /* Clear floats after the columns */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
+  }
+  /* Style the footer */
+  .footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+  }
+  </style>
+
+  <style>
+  * {
+      box-sizing: border-box;
+  }
+
+  body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fafafa;
+  }
+
+  /* Header styling */
+  .header {
+      background-color: #941372;
+      padding: 40px;
+      text-align: center;
+      color: white;
+  }
+
+  .header img {
+      width: 120px;
+      height: auto;
+      margin-bottom: 10px;
+  }
+
+  .header h1 {
+      font-size: 36px;
+      margin: 10px 0;
+  }
+
+  .header p {
+      font-size: 20px;
+      font-style: italic;
+      margin: 10px 0;
+  }
+
+  /* Navigation bar styling */
+  .topnav {
+      overflow: hidden;
+      background-color: #941372;
+  }
+
+  .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+  }
+
+  .topnav a:hover {
+      background-color: #ddd;
+      color: #941372;
+  }
+
+  /* Section styling */
+  .about-section {
+      background-color: #ffffff;
+      padding: 40px;
+      margin: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .about-section h2 {
+      font-size: 32px;
+      color: #941372;
+      margin-bottom: 20px;
+      text-align: center;
+  }
+
+  .about-section p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #555;
+  }
+
+  .about-section ul {
+      list-style-type: none;
+      padding: 0;
+      margin-top: 20px;
+  }
+
+  .about-section ul li {
+      font-size: 18px;
+      margin: 10px 0;
+  }
+
+  .about-section .quote {
+      background-color: #f8f8f8;
+      padding: 20px;
+      font-size: 20px;
+      font-style: italic;
+      text-align: center;
+      border-radius: 8px;
+      color: #941372;
+      margin-top: 40px;
+  }
+
+  /* Responsive layout for smaller screens */
+  @media screen and (max-width: 768px) {
+      .header h1 {
+          font-size: 30px;
+      }
+
+      .topnav a {
+          padding: 12px 16px;
+      }
+
+      .about-section {
+          margin: 10px;
+      }
+  }
+
+  /* Footer styling */
+  .footer {
+      background-color: #941372;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+  }
+</style>
+
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+.header img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #941372;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: rgb(145, 13, 110);
+}
+
+.container {
+  padding: 20px;
+}
+
+.contact-info {
+  margin-bottom: 20px;
+}
+
+.contact-info h2 {
+  color: #941372;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+.map-container {
+  margin-top: 20px;
+}
+
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Responsive map */
+.map-container iframe {
+  width: 100%;
+  height: 400px;
+  border: 0;
+}
+</style>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+.header img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #941372;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: rgb(145, 13, 110);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.product {
+  flex: 1 1 300px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  background: #fff;
+}
+
+.product img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.product h3 {
+  color: #941372;
+  margin: 10px 0;
+}
+
+.product p {
+  padding: 0 15px 15px;
+}
+
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+</style>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+.header img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #941372;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: rgb(145, 13, 110);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.product {
+  flex: 1 1 300px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  background: #fff;
+}
+
+.product img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.product h3 {
+  color: #941372;
+  margin: 10px 0;
+}
+
+.product p {
+  padding: 0 15px 15px;
+}
+
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+</style>
+
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #550023;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #941372;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: rgb(145, 13, 110);
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+/* Style the footer */
+.footer {
+  background-color: #f800d3;
+  color: #131313;
+  padding: 10px;
+  text-align: center;
+}
+</style>
