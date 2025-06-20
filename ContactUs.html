@@ -3,16 +3,10 @@
 <head>
 <title>Contact Us - Beauty Nest</title>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<div class="header">
-  <img src="logo.png" alt="Beauty Nest Logo">
-  <h1>BEAUTY NEST</h1>
-  <p>Unnest Your Beauty Potential</p>
-</div>
 
 <div class="topnav">
   <a href="Homepage.html">Homepage</a>
@@ -21,7 +15,27 @@
   <a href="OurServices.html">Our Services</a>
   <a href="ContactUs.html">Contact Us</a>
 </div>
+<!--FORM-->
+  <div class="contact-section">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or feedback, feel free to reach out!</p>
 
+        <div class="contact-form">
+            <form action="#">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email address">
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+<!--contact information-->
 <div class="container">
   <div class="contact-info">
     <h2>Contact Us</h2>
